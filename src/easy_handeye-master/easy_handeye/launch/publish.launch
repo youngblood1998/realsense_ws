@@ -1,0 +1,25 @@
+
+<launch>
+	
+		<!-- start the robot -->
+  <include file="$(find ur_modern_driver)/launch/ur5_bringup.launch">
+      <arg name="limited" value="true" />
+      <arg name="robot_ip" value="192.168.1.102" />
+  </include>
+  <include file="$(find ur5_moveit_config)/launch/ur5_moveit_planning_execution.launch">
+      <arg name="limited" value="true" />
+  </include>
+ 
+  <include file="$(find ur5_moveit_config)/launch/moveit_rviz.launch">
+      <arg name="config" value="true" />
+  </include>
+ 
+ 
+<include file="$(find realsense2_camera)/launch/rs_camera.launch" />
+
+ 
+	<!--<include file="$(find easy_handeye)/launch/publish.launch" />-->
+ 
+	<node pkg="tf" type="static_transform_publisher" name="ur5_broadcaster" args="-0.003969741624165487 -0.06600922938811848 0.07342698622213362 0.00985312441991159 -0.007434250646441948 0.016460922299367124 0.9997883205426766  tool0 camera_color_frame 100" />
+ 
+</launch>

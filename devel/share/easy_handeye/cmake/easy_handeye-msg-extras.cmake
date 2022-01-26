@@ -1,0 +1,2 @@
+set(easy_handeye_MESSAGE_FILES "/home/jay/realsense_ws/src/easy_handeye-master/easy_handeye/msg/HandeyeCalibration.msg;/home/jay/realsense_ws/src/easy_handeye-master/easy_handeye/msg/SampleList.msg")
+set(easy_handeye_SERVICE_FILES "/home/jay/realsense_ws/src/easy_handeye-master/easy_handeye/srv/ComputeCalibration.srv;/home/jay/realsense_ws/src/easy_handeye-master/easy_handeye/srv/RemoveSample.srv;/home/jay/realsense_ws/src/easy_handeye-master/easy_handeye/srv/TakeSample.srv")

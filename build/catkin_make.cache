@@ -1,0 +1,2 @@
+aruco_ros/aruco:aruco_ros/aruco_msgs:aruco_ros/aruco_ros:easy_handeye-master/easy_handeye:easy_handeye-master/rqt_easy_handeye:realsense-ros/realsense2_camera:realsense-ros/realsense2_description:vision_visp/vision_visp:vision_visp/visp_auto_tracker:vision_visp/visp_bridge:vision_visp/visp_camera_calibration:vision_visp/visp_hand2eye_calibration:vision_visp/visp_tracker
+-DCATKIN_DEVEL_PREFIX=/home/jay/realsense_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jay/realsense_ws/install -G Unix Makefiles

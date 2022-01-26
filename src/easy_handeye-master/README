@@ -1,0 +1,9 @@
+开机器人
+roslaunch ur_modern_driver ur5_bringup.launch limited:=false robot_ip:=192.168.1.12
+roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch limited:=false
+开摄像头
+roslaunch realsense2_camera rs_camera_ca.launch
+标定程序
+roslaunch easy_handeye ur5_realsense_handeyecalibration.launch
+roslaunch easy_handeye easy.launch
+记得在rqt中插入image_view，否则报错
